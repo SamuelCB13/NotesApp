@@ -1,0 +1,28 @@
+<app-navbar></app-navbar>
+
+<div class="general">
+    <p>Crea una nueva nota en "Create Note" y verás las notas.</p>
+    <div class="form">
+        <div>
+            <h1>{{ title }}</h1>
+        </div>
+        <div class="campo">
+            <label>User:</label>
+            <p>{{ user }}</p>
+        </div>
+        <div class="campo">
+            <label>Content:</label>
+            <p>{{ content }}</p>
+        </div>
+        <div class="campo">
+            <label>Date:</label>
+            <p>{{ date }}</p>
+        </div>
+    <div class="buttons">
+        <button (click)="editNote()" class="edit">Editar</button>
+        <button (click)="deleteNote()" class="delete">Eliminar</button>
+    </div>
+    </div>
+</div>
+
+<app-footer></app-footer>

@@ -1,0 +1,83 @@
+.general{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #edfff1;
+}
+
+.titulo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 20px 0px;
+}
+
+.titulo > hr{
+    border: solid 2px #00ff40;
+    border-radius: 7px;
+    width: 175%;
+    margin-top: 10px;
+}
+
+form{
+    padding: 20px;
+    width: 30%;
+}
+
+form > div{
+    display: flex;
+    flex-direction: column;
+    margin: 0px 10px 10px;
+}
+
+label{
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input, select, textarea{
+    height: auto;
+    padding: 10px;
+    border-radius: 7px;
+    border: solid 2px #b3b3b3;
+    font-weight: bold;
+}
+
+input:focus{
+    border: solid 2px #00ff40;
+    outline: none;
+}
+
+select:focus{
+    border: solid 2px #00ff40;
+    outline: none;
+}
+
+textarea:focus{
+    border: solid 2px #00ff40;
+    outline: none;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button{
+    padding: 10px;
+    border: solid 2px #00ff40;
+    color: #00ff40;
+    font-weight: bold;
+    border-radius: 7px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover{
+    border: solid 2px #076020;
+    color: #076020;
+}

@@ -1,0 +1,26 @@
+<app-navbar></app-navbar>
+
+<div class="general">
+    <div class="formulario">
+        <div class="titulo">
+            <h1>Create New User</h1>
+            <hr>
+        </div>
+        <form [formGroup]="userForm" (ngSubmit)="onSubmit()">
+            <div>
+                <label for="">Name:</label>
+                <input type="text" placeholder="Ingrese su Nombre" formControlName="name">
+            </div>
+            <div class="button">
+                <button type="submit">Create User</button>
+            </div>
+        </form>
+    </div>
+    <div class="usuarios">
+        <div *ngFor="let user of users">
+            <p>{{ user }}</p>
+        </div>
+    </div>
+</div>
+
+<app-footer></app-footer>
